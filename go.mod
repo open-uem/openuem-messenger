@@ -1,6 +1,6 @@
 module github.com/doncicuto/openuem_message
 
-go 1.23.1
+go 1.23.4
 
 require (
 	github.com/pkg/browser v0.0.0-20240102092130-5ac0b6a4141c

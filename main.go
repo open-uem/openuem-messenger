@@ -13,7 +13,7 @@ func main() {
 		Name:      "openuem-message",
 		Commands:  getCommands(),
 		Usage:     "Show OpenUEM messages to Windows users",
-		Authors:   []*cli.Author{{Name: "Miguel Angel Alvarez Cabrerizo", Email: "mcabrerizo@sologitops.com"}},
+		Authors:   []*cli.Author{{Name: "Miguel Angel Alvarez Cabrerizo", Email: "mcabrerizo@openuem.eu"}},
 		Copyright: "2024 - Miguel Angel Alvarez Cabrerizo <https://github.com/doncicuto>",
 	}
 
