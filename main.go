@@ -4,7 +4,7 @@ import (
 	"log"
 	"os"
 
-	"github.com/doncicuto/openuem_message/commands"
+	"github.com/open-uem/openuem-messenger/commands"
 	"github.com/urfave/cli/v2"
 )
 
