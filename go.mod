@@ -1,6 +1,6 @@
 module github.com/open-uem/openuem-messenger
 
-go 1.23.4
+go 1.23.6
 
 require (
 	github.com/pkg/browser v0.0.0-20240102092130-5ac0b6a4141c
