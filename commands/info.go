@@ -5,6 +5,7 @@ import (
 	"log"
 	"os"
 	"path/filepath"
+	"time"
 
 	"github.com/pkg/browser"
 	"github.com/urfave/cli/v2"
@@ -63,8 +64,13 @@ func showPINMessage(m *Message) error {
 		return err
 	}
 
-	browser.OpenFile(file.Name())
+	if err := browser.OpenFile(file.Name()); err != nil {
+		log.Printf("[ERROR]:could not open the browser window to show the message file from the template: %v", err.Error())
+		return err
+	}
 
+	// Give the browser some time to open and show the message (race condition)
+	time.Sleep(10 * time.Second)
 	return nil
 }
 
